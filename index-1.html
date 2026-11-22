@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Free bilingual learning resources for students from school to degree level.">
+  <title>EduWorld Kerala | Learn Without Limits</title>
+  <style>
+    :root{--navy:#102a43;--blue:#1769aa;--teal:#0e9f8f;--bg:#f4f8fc;--ink:#183247;--muted:#62788a}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Malayalam",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+    header{background:linear-gradient(120deg,#102a43,#1769aa);color:white;padding:18px max(5%,calc((100% - 1120px)/2))}
+    .top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font-size:1.35rem;font-weight:800;letter-spacing:.2px}.brand span{color:#71e0d1}
+    nav{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px}nav a{color:white;text-decoration:none;font-size:.95rem}
+    button,.btn{border:0;border-radius:10px;padding:10px 15px;background:var(--teal);color:white;font-weight:700;cursor:pointer;text-decoration:none}
+    .hero{max-width:1120px;margin:auto;padding:54px 22px 42px;display:grid;grid-template-columns:1.4fr .8fr;gap:28px;align-items:center}
+    .hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:0 0 15px;color:var(--navy)}
+    .hero p{font-size:1.1rem;color:var(--muted);max-width:620px}.hero-card{background:white;padding:25px;border-radius:20px;box-shadow:0 12px 35px #102a4312}
+    .hero-card strong{font-size:2.2rem;color:var(--teal);display:block}
+    main{max-width:1120px;margin:auto;padding:0 22px 55px}
+    .ad{border:2px dashed #b8c9d8;border-radius:12px;padding:16px;text-align:center;color:#71869a;background:#fff;margin:24px 0;font-size:.9rem}
+    h2{color:var(--navy);margin:34px 0 14px}.tools{display:flex;gap:10px;flex-wrap:wrap}.tools input{flex:1;min-width:210px;padding:13px 14px;border:1px solid #cbd8e3;border-radius:10px;font:inherit}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
+    .card{background:white;border-radius:16px;padding:20px;box-shadow:0 5px 20px #102a430b;border:1px solid #e7eef5}
+    .icon{font-size:1.8rem}.card h3{margin:8px 0 4px;color:var(--navy)}.card p{margin:0 0 14px;color:var(--muted);font-size:.94rem}
+    .card a{color:var(--blue);font-weight:700;text-decoration:none}.tag{display:inline-block;background:#e7f7f4;color:#08796d;border-radius:30px;padding:4px 9px;font-size:.78rem;font-weight:700}
+    .notice{background:#eaf3fb;border-left:4px solid var(--blue);padding:14px 16px;border-radius:8px;color:#36556d}
+    footer{background:#102a43;color:#dce8f2;padding:28px 22px;text-align:center}footer a{color:#71e0d1}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:38px}.grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:480px){.grid{grid-template-columns:1fr}nav{gap:12px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <div class="brand">EduWorld <span>Kerala</span></div>
+    <button id="langBtn" type="button" onclick="toggleLanguage()">മലയാളം</button>
+  </div>
+  <nav>
+    <a href="#home" data-en="Home" data-ml="ഹോം">Home</a>
+    <a href="#classes" data-en="Classes" data-ml="ക്ലാസുകൾ">Classes</a>
+    <a href="#resources" data-en="Study Materials" data-ml="പഠനസാമഗ്രികൾ">Study Materials</a>
+    <a href="#about" data-en="About" data-ml="ഞങ്ങളെക്കുറിച്ച്">About</a>
+    <a href="#contact" data-en="Contact" data-ml="ബന്ധപ്പെടുക">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div>
+    <span class="tag" data-en="LEARN • PRACTISE • GROW" data-ml="പഠിക്കൂ • പരിശീലിക്കൂ • വളരൂ">LEARN • PRACTISE • GROW</span>
+    <h1 data-en="Your learning journey starts here." data-ml="നിങ്ങളുടെ പഠനയാത്ര ഇവിടെ തുടങ്ങുന്നു.">Your learning journey starts here.</h1>
+    <p data-en="Free learning resources in Malayalam and English for students from primary school to degree level."
+       data-ml="LP മുതൽ ഡിഗ്രി വരെ പഠിക്കുന്ന വിദ്യാർത്ഥികൾക്കായി മലയാളത്തിലും ഇംഗ്ലീഷിലും പഠനസാമഗ്രികൾ.">Free learning resources in Malayalam and English for students from primary school to degree level.</p>
+    <a class="btn" href="#classes" data-en="Explore classes" data-ml="ക്ലാസുകൾ കാണുക">Explore classes</a>
+  </div>
+  <div class="hero-card">
+    <strong>LP → Degree</strong>
+    <div data-en="One place for notes, question papers and learning resources." data-ml="നോട്ടുകൾ, ചോദ്യപേപ്പറുകൾ, പഠനസാമഗ്രികൾ എന്നിവയ്ക്കായി ഒരിടം.">One place for notes, question papers and learning resources.</div>
+  </div>
+</section>
+
+<main>
+  <div class="ad">
+    <b data-en="Advertisement space" data-ml="പരസ്യത്തിനുള്ള സ്ഥലം">Advertisement space</b><br>
+    <span data-en="Google AdSense code can be added here after your site is approved." data-ml="AdSense അംഗീകാരം ലഭിച്ച ശേഷം ഇവിടെ Google പരസ്യ കോഡ് ചേർക്കാം.">Google AdSense code can be added here after your site is approved.</span>
+  </div>
+
+  <section id="classes">
+    <h2 data-en="Choose your learning level" data-ml="നിങ്ങളുടെ പഠനനില തിരഞ്ഞെടുക്കൂ">Choose your learning level</h2>
+    <div class="grid">
+      <article class="card"><div class="icon">🧒</div><h3>LP / UP</h3><p data-en="Foundational lessons and practice." data-ml="അടിസ്ഥാന പാഠങ്ങളും പരിശീലനവും.">Foundational lessons and practice.</p><a href="#resources" data-en="View resources →" data-ml="സാമഗ്രികൾ കാണുക →">View resources →</a></article>
+      <article class="card"><div class="icon">🏫</div><h3>Classes 8–10</h3><p data-en="Notes, revision and exam preparation." data-ml="നോട്ടുകൾ, റിവിഷൻ, പരീക്ഷാ തയ്യാറെടുപ്പ്.">Notes, revision and exam preparation.</p><a href="#resources" data-en="View resources →" data-ml="സാമഗ്രികൾ കാണുക →">View resources →</a></article>
+      <article class="card"><div class="icon">🎓</div><h3>Plus One / Plus Two</h3><p data-en="Subject-wise study support." data-ml="വിഷയാടിസ്ഥാനത്തിലുള്ള പഠനസഹായം.">Subject-wise study support.</p><a href="#resources" data-en="View resources →" data-ml="സാമഗ്രികൾ കാണുക →">View resources →</a></article>
+      <article class="card"><div class="icon">📘</div><h3>Degree</h3><p data-en="Learning resources for college students." data-ml="കോളേജ് വിദ്യാർത്ഥികൾക്കുള്ള പഠനസാമഗ്രികൾ.">Learning resources for college students.</p><a href="#resources" data-en="View resources →" data-ml="സാമഗ്രികൾ കാണുക →">View resources →</a></article>
+      <article class="card"><div class="icon">📝</div><h3 data-en="Question Papers" data-ml="ചോദ്യപേപ്പറുകൾ">Question Papers</h3><p data-en="Previous papers and model tests." data-ml="മുൻവർഷ ചോദ്യപേപ്പറുകളും മാതൃകാ പരീക്ഷകളും.">Previous papers and model tests.</p><a href="#resources" data-en="Explore →" data-ml="കാണുക →">Explore →</a></article>
+      <article class="card"><div class="icon">📂</div><h3 data-en="PDF Library" data-ml="PDF ലൈബ്രറി">PDF Library</h3><p data-en="Downloadable notes and worksheets." data-ml="ഡൗൺലോഡ് ചെയ്യാവുന്ന നോട്ടുകളും വർക്ക്‌ഷീറ്റുകളും.">Downloadable notes and worksheets.</p><a href="#resources" data-en="Explore →" data-ml="കാണുക →">Explore →</a></article>
+    </div>
+  </section>
+
+  <section id="resources">
+    <h2 data-en="Find study materials" data-ml="പഠനസാമഗ്രികൾ തിരയുക">Find study materials</h2>
+    <div class="tools">
+      <input id="searchBox" type="search" placeholder="Search notes, subjects or classes..." aria-label="Search study materials">
+      <button onclick="searchResources()" data-en="Search" data-ml="തിരയുക">Search</button>
+    </div>
+    <div class="grid" id="resourceGrid">
+      <article class="card resource"><div class="icon">📄</div><h3 data-en="Chapter Notes" data-ml="അധ്യായ നോട്ടുകൾ">Chapter Notes</h3><p data-en="Add your Malayalam and English chapter notes here." data-ml="മലയാളം, ഇംഗ്ലീഷ് അധ്യായ നോട്ടുകൾ ഇവിടെ ചേർക്കുക.">Add your Malayalam and English chapter notes here.</p><span class="tag">PDF</span></article>
+      <article class="card resource"><div class="icon">✍️</div><h3 data-en="Worksheets" data-ml="വർക്ക്‌ഷീറ്റുകൾ">Worksheets</h3><p data-en="Add practice worksheets for each class." data-ml="ഓരോ ക്ലാസിനുമുള്ള പരിശീലന വർക്ക്‌ഷീറ്റുകൾ ചേർക്കുക.">Add practice worksheets for each class.</p><span class="tag">Practice</span></article>
+      <article class="card resource"><div class="icon">📚</div><h3 data-en="Model Question Papers" data-ml="മാതൃകാ ചോദ്യപേപ്പറുകൾ">Model Question Papers</h3><p data-en="Upload model papers and answer keys." data-ml="മാതൃകാ ചോദ്യപേപ്പറുകളും ഉത്തരസൂചികകളും അപ്‌ലോഡ് ചെയ്യുക.">Upload model papers and answer keys.</p><span class="tag">Exam prep</span></article>
+    </div>
+  </section>
+
+  <div class="ad">
+    <b data-en="Advertisement space" data-ml="പരസ്യത്തിനുള്ള സ്ഥലം">Advertisement space</b><br>
+    <span data-en="A second ad placement for approved AdSense ads." data-ml="അംഗീകൃത AdSense പരസ്യങ്ങൾക്കുള്ള രണ്ടാമത്തെ സ്ഥലം.">A second ad placement for approved AdSense ads.</span>
+  </div>
+
+  <section id="about">
+    <h2 data-en="About EduWorld Kerala" data-ml="EduWorld Kerala-യെക്കുറിച്ച്">About EduWorld Kerala</h2>
+    <p data-en="Our goal is to make useful learning resources easier to find for every student. Add original, accurate and regularly updated educational content."
+       data-ml="ഓരോ വിദ്യാർത്ഥിക്കും ഉപകാരപ്രദമായ പഠനസാമഗ്രികൾ എളുപ്പത്തിൽ ലഭ്യമാക്കുകയാണ് ഞങ്ങളുടെ ലക്ഷ്യം. സ്വന്തം, കൃത്യമായ, പുതുക്കിയ വിദ്യാഭ്യാസ ഉള്ളടക്കം ചേർക്കുക.">Our goal is to make useful learning resources easier to find for every student. Add original, accurate and regularly updated educational content.</p>
+    <div class="notice" data-en="Before launch: add your own content, contact details, privacy policy, and terms. Only upload materials you own or have permission to share."
+         data-ml="പ്രസിദ്ധീകരിക്കുന്നതിന് മുമ്പ്: നിങ്ങളുടെ ഉള്ളടക്കം, ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ, Privacy Policy, Terms എന്നിവ ചേർക്കുക. നിങ്ങൾക്ക് അവകാശമുള്ളതോ പങ്കിടാൻ അനുമതിയുള്ളതോ ആയ പഠനസാമഗ്രികൾ മാത്രം അപ്‌ലോഡ് ചെയ്യുക.">Before launch: add your own content, contact details, privacy policy, and terms. Only upload materials you own or have permission to share.</div>
+  </section>
+  <section id="contact"><h2 data-en="Contact" data-ml="ബന്ധപ്പെടുക">Contact</h2><p data-en="Add your official email address here." data-ml="നിങ്ങളുടെ ഔദ്യോഗിക ഇമെയിൽ വിലാസം ഇവിടെ ചേർക്കുക.">Add your official email address here.</p></section>
+</main>
+<footer>© 2026 EduWorld Kerala · <a href="#about">Privacy Policy</a> · <a href="#about">Terms</a></footer>
+<script>
+let currentLang = 'en';
+function toggleLanguage(){
+  currentLang = currentLang === 'en' ? 'ml' : 'en';
+  document.querySelectorAll('[data-en]').forEach(el => el.textContent = el.dataset[currentLang]);
+  document.getElementById('langBtn').textContent = currentLang === 'en' ? 'മലയാളം' : 'English';
+  document.documentElement.lang = currentLang === 'en' ? 'en' : 'ml';
+  document.getElementById('searchBox').placeholder = currentLang === 'en' ? 'Search notes, subjects or classes...' : 'നോട്ടുകൾ, വിഷയങ്ങൾ, ക്ലാസുകൾ തിരയുക...';
+}
+function searchResources(){
+  const q = document.getElementById('searchBox').value.trim().toLowerCase();
+  document.querySelectorAll('.resource').forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(q) ? '' : 'none';
+  });
+}
+document.getElementById('searchBox').addEventListener('input', searchResources);
+</script>
+</body>
+</html>
